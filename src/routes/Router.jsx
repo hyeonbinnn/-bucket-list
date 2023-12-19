@@ -1,14 +1,24 @@
-import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home } from './../pages/HomePage/Home';
+import UserContext from '../context/UserContext';
+import { Home } from '../pages/Home/Home';
+import Post from './../pages/Post/Post';
+// import data from '../data/data.json';
 
 const Router = () => {
+  const [userId, setUserId] = useState(0);
+  const [isLogin, setIsLogin] = useState(true);
+
+  // console.log(data);
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <UserContext.Provider value={{ userId, isLogin }}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/post/:id" element={<Post />} />
+        </Routes>
+      </BrowserRouter>
+    </UserContext.Provider>
   );
 };
 
