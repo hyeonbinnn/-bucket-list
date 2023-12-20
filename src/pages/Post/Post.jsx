@@ -16,6 +16,7 @@ const Post = () => {
       })
       .catch((error) => {
         setPost(null);
+        console.log('데이터 불러오는 중 에러 발생', error);
       });
   }, []);
 
