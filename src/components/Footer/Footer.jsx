@@ -1,7 +1,15 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <div className="max-width">
+        <h2>© Weniv Corp.</h2>
+        <button className="top-button">TOP</button>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
