@@ -6,7 +6,7 @@ import Post from './../pages/Post/Post';
 // import data from '../data/data.json';
 
 const Router = () => {
-  const [userId, setUserId] = useState(0);
+  const [userId, setUserId] = useState(1);
   const [isLogin, setIsLogin] = useState(true);
 
   // console.log(data);
