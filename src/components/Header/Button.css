@@ -20,9 +20,6 @@
   vertical-align: middle;
 }
 
-.button.fullWidth {
-  width: 100%;
-}
 .button.gray {
   background: var(--gray-background);
   color: var(--black-color);
@@ -34,6 +31,11 @@
 }
 .button.white img {
   height: 1.4em;
+}
+
+/* ? */
+.button.fullWidth {
+  width: 100%;
 }
 
 .btn-delete:focus {
