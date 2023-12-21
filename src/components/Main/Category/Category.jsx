@@ -1,14 +1,15 @@
 import React from 'react';
-import './Category.css';
+import * as S from './Category.style';
 
 const Category = ({ category }) => {
   return (
     <>
-      <dl className="category">
+      <S.Category className="category">
         <dt className="a11y-hidden">Category</dt>
-        <dd>Life</dd>
-        <dd>Style</dd>
-      </dl>
+        {category.map((item, index) => (
+          <S.Item key={index}>{item}</S.Item>
+        ))}
+      </S.Category>
     </>
   );
 };

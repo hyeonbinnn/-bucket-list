@@ -16,7 +16,7 @@ const Posts = ({ posts }) => {
                 <S.PostH3>{post.title}</S.PostH3>
                 <Author
                   profileImg={post.profileImg}
-                  useName={post.userName}
+                  userName={post.userName}
                   created={post.created}
                 />
                 <S.PostDescription className="post-description">

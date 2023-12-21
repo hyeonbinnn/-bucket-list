@@ -1,17 +1,17 @@
 import React from 'react';
-import './Author.css';
+import * as S from './Author.style';
 
 const Author = ({ profileImg, userName, created }) => {
   return (
     <>
-      <dl className="author-wrap">
+      <S.AuthorWrap className="author-wrap">
         <dt className="a11y-hidden">Author</dt>
-        <dd className="author">
-          <img src={profileImg} alt="profileImg" /> {userName}
-        </dd>
+        <S.Author className="author">
+          <S.ProfileImg src={profileImg} alt="profileImg" /> {userName}
+        </S.Author>
         <dt className="a11y-hidden">Created</dt>
-        <dd className="created">{created}</dd>
-      </dl>
+        <S.Created className="created">{created}</S.Created>
+      </S.AuthorWrap>
     </>
   );
 };
