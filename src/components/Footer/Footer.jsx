@@ -1,14 +1,14 @@
 import React from 'react';
-import './Footer.css';
+import * as S from './Footer.style';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="max-width">
-        <h2>© Weniv Corp.</h2>
-        <button className="top-button">TOP</button>
-      </div>
-    </footer>
+    <S.Footer>
+      <S.Container className="max-width">
+        <S.H2>© Weniv Corp.</S.H2>
+        <S.TopButton className="top-button">TOP</S.TopButton>
+      </S.Container>
+    </S.Footer>
   );
 };
 
