@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import imgLogin from '../../../assets/icon-login.svg';
 import imgRegister from '../../../assets/icon-register.svg';
+import { ButtonGray, ButtonImg, OnlyPc } from '../Button.style';
 
 const Logout = () => {
   return (
     <>
       <li>
-        <Link to="#" className="button gray">
-          <img src={imgLogin} alt="Login" />
+        <ButtonGray to="#" className="button gray">
+          <ButtonImg src={imgLogin} alt="Login" />
           <span>Login</span>
-        </Link>
+        </ButtonGray>
       </li>
-      <li className="only-pc">
-        <Link to="#" className="button gray">
-          <img src={imgRegister} alt="Register" />
+      <OnlyPc className="only-pc">
+        <ButtonGray to="#" className="button gray">
+          <ButtonImg src={imgRegister} alt="Register" />
           <span>Register</span>
-        </Link>
-      </li>
+        </ButtonGray>
+      </OnlyPc>
     </>
   );
 };
