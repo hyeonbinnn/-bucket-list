@@ -65,3 +65,32 @@ export const Description = styled.p`
   word-break: break-all;
   padding: 0 0.8rem;
 `;
+
+// .today {
+// 	padding-left: 0.8em;
+// 	font-size: 5rem;
+// 	font-weight: bold;
+// 	text-align: left;
+// 	line-height: 1.1;
+// }
+// .today em {
+// 	display: block;
+// 	font-size: 2em;
+// 	margin-bottom: -0.15em;
+
+/* 반응형 */
+// @media (max-width: 1260px) {
+// 	.today {
+// 		font-size: 3rem;
+// 		padding-left: 0.2em;
+// 	}
+// 	.today em {
+// 		display: inline;
+// 		font-size: 1.4em;
+// 	}
+
+// @media (max-width: 768px) {
+//   .today {
+//     text-align: center;
+//     padding-left: 0;
+//   }
