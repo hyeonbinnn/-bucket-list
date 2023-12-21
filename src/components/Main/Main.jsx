@@ -3,7 +3,7 @@ import UserContext from './../../context/UserContext';
 import axios from 'axios';
 import { About } from './About/About';
 import Posts from './Posts/Posts';
-import './Main.css';
+import * as S from './Main.style';
 
 const Main = () => {
   const [posts, setPosts] = useState();
@@ -25,13 +25,13 @@ const Main = () => {
   return (
     <main>
       {posts !== undefined ? (
-        <div className="max-width">
+        <S.Container className="max-width">
           <h2 className="a11y-hidden">Post</h2>
-          <ul className="posts">
+          <S.Posts className="posts">
             <Posts posts={posts} />
-          </ul>
+          </S.Posts>
           {isLogin ? <About /> : <></>}
-        </div>
+        </S.Container>
       ) : null}
     </main>
   );
