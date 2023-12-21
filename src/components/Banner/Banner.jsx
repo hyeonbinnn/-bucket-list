@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Banner.css';
+import * as S from './Banner.style';
 
 const Banner = () => {
   const [blogInfo, setBlogInfo] = useState(undefined);
@@ -23,15 +23,15 @@ const Banner = () => {
       {blogInfo === undefined ? (
         <div>로딩중...</div>
       ) : (
-        <div className="banner">
+        <S.Banner className="banner">
           <div className="max-width">
-            <div className="banner-contents">
-              <p className="sub-text">{blogInfo.subTitle}</p>
-              <p className="main-text">{blogInfo.mainTitle}</p>
-              <p className="description">{blogInfo.description}</p>
-            </div>
+            <S.BannerContents className="banner-contents">
+              <S.SubText className="sub-text">{blogInfo.subTitle}</S.SubText>
+              <S.MainText className="main-text">{blogInfo.mainTitle}</S.MainText>
+              <S.Description className="description">{blogInfo.description}</S.Description>
+            </S.BannerContents>
           </div>
-        </div>
+        </S.Banner>
       )}
     </div>
   );
