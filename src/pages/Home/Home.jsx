@@ -9,9 +9,8 @@ export const Home = () => {
     <div>
       <Header />
       <Banner />
-      <Main posts />
+      <Main />
       <Footer />
-      {/* {posts && posts.map((post) => <h2 key={post.id}>{post.title}</h2>)} */}
     </div>
   );
 };
