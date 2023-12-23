@@ -1,7 +1,7 @@
 import React from 'react';
 import Category from '../Category/Category';
 import Author from '../Author/Author';
-import * as S from './Post.style';
+import * as S from './Posts.style';
 
 const Posts = ({ posts }) => {
   return (
