@@ -6,11 +6,11 @@ import Footer from './../../components/Footer/Footer';
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Header />
       <Banner />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 };
