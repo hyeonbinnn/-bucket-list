@@ -25,8 +25,6 @@ const Post = () => {
       });
   }, []);
 
-  // console.log(post);
-
   if (!post) {
     return <div>Loading...</div>;
   }
