@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserContext from '../context/UserContext';
 import { Home } from '../pages/Home/Home';
 import Post from './../pages/Post/Post';
-// import data from '../data/data.json';
 
 const Router = () => {
   const [userId, setUserId] = useState(1);
