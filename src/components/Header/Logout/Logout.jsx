@@ -1,7 +1,7 @@
 import React from 'react';
 import imgLogin from '../../../assets/icon-login.svg';
 import imgRegister from '../../../assets/icon-register.svg';
-import { ButtonGray, ButtonImg, OnlyPc } from '../Button.style';
+import { ButtonGray, ButtonImg, OnlyPc } from '../Button.jsx';
 
 const Logout = () => {
   return (

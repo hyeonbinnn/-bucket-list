@@ -3,7 +3,7 @@ import imgProfile from '../../../assets/profile.jpg';
 import imgModify from '../../../assets/icon-modify-white.svg';
 import imgLogout from '../../../assets/icon-logout.svg';
 import { ProfileLink, ProfileImg } from '../Header.style';
-import { ButtonLink, ButtonImg, ButtonWhite } from '../Button.style';
+import { ButtonLink, ButtonImg, ButtonWhite } from '../Button.jsx';
 
 const Login = () => {
   return (
