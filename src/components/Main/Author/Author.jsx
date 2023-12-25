@@ -1,10 +1,10 @@
 import React from 'react';
 import * as S from './Author.style';
 
-const Author = ({ profileImg, userName, created }) => {
+const Author = ({ profileImg, userName, created, style }) => {
   return (
     <>
-      <S.AuthorWrap className="author-wrap">
+      <S.AuthorWrap className="author-wrap" style={style}>
         <dt className="a11y-hidden">Author</dt>
         <S.Author className="author">
           <S.ProfileImg src={profileImg} alt="profileImg" /> {userName}
