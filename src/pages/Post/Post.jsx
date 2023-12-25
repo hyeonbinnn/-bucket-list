@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import * as S from './Post.style';
-// import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import Author from '../../components/Main/Author/Author';
+import View from '../../components/View/View';
 
 const Post = () => {
-  // const location = useLocation();
-  // console.log(location);
-  // const postNumber = location.pathname.split('/')[2];
   const { id } = useParams();
-  const [post, setPost] = useState(undefined);
+  const [post, setPost] = useState(null);
 
   useEffect(() => {
     axios
@@ -39,26 +35,7 @@ const Post = () => {
           </S.PostBannerContents>
         </div>
       </S.PostBanner>
-
-      <S.PostSection>
-        <div>
-          <S.PostAuthor>
-            <S.PostProfileImg src={post.profileImg} alt="profileImg" />
-            {post.userName}
-            <S.PostCreated>{post.created}</S.PostCreated>
-          </S.PostAuthor>
-          <div>
-            <S.PostCategory>{post.category}</S.PostCategory>
-            <S.PostTitle>{post.title}</S.PostTitle>
-          </div>
-        </div>
-
-        <S.ContentsWrap>
-          {post.contents.map((content, index) => (
-            <p key={index}>{content.text}</p>
-          ))}
-        </S.ContentsWrap>
-      </S.PostSection>
+      <View post={post} />
       <Footer />
     </>
   );
