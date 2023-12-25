@@ -8,7 +8,6 @@ const Router = () => {
   const [userId, setUserId] = useState(1);
   const [isLogin, setIsLogin] = useState(true);
 
-  // console.log(data);
   return (
     <UserContext.Provider value={{ userId, isLogin }}>
       <BrowserRouter>
