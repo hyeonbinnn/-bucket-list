@@ -9,6 +9,7 @@ import View from '../../components/View/View';
 const Post = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
+  const [todayInfo, setTodayInfo] = useState(null);
 
   useEffect(() => {
     axios
@@ -19,7 +20,12 @@ const Post = () => {
       .catch((error) => {
         console.log('데이터 불러오는 중 에러 발생', error);
       });
-  }, []);
+
+    const now = new Date();
+    const options = { month: 'short', day: 'numeric', weekday: 'long' };
+    const todayInfoString = now.toLocaleDateString('en-US', options);
+    setTodayInfo(todayInfoString);
+  }, [id]);
 
   if (!post) {
     return <div>Loading...</div>;
@@ -31,7 +37,7 @@ const Post = () => {
       <S.PostBanner className="banner" mainBg={post.mainBg}>
         <div className="max-width">
           <S.PostBannerContents className="banner-contents">
-            <span>오늘 날짜 영어로 넣기</span>
+            <S.Today>{todayInfo}</S.Today>
           </S.PostBannerContents>
         </div>
       </S.PostBanner>
