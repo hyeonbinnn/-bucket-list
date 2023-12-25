@@ -33,7 +33,6 @@ export const PostSection = styled.section`
 
   @media (max-width: 1024px) {
     width: 100%;
-    margin-top: -35rem;
     padding: 6rem;
   }
 `;
