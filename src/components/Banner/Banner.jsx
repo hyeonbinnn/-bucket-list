@@ -16,7 +16,6 @@ const Banner = () => {
         setBlogInfo(null);
       });
   }, []);
-  // console.log(blogInfo);
 
   return (
     <div>

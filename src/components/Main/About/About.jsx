@@ -24,8 +24,6 @@ export const About = () => {
       });
   }, []);
 
-  // console.log(userData);
-
   return (
     <>
       {userData !== undefined ? (

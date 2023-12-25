@@ -20,8 +20,6 @@ const Main = () => {
       });
   }, []);
 
-  // console.log(posts);
-
   return (
     <main>
       {posts !== undefined ? (
