@@ -88,6 +88,7 @@
   export default Router;
 ```
 <br>
+<br>
 
 ### Header.jsx
 - <strong>`useContext`</strong>훅을 사용해 불러온 사용자 정보 컨텍스트 <strong>`UserContext`</strong>에서 <strong>`isLogin`</strong> 상태를 가져온다. 
@@ -187,6 +188,7 @@
 ```
 
 <br>
+<br>
 
 ### Posts.jsx
 - <strong>`posts`</strong> 데이터를 <strong>`props`</strong>로 받아 화면에 표시한다.
@@ -234,10 +236,10 @@
 
 ## 🖱️ 결과
 ### 로그인
-![](https://velog.velcdn.com/images/hyeonbinnn/post/0eabf259-d060-4163-af99-87211159c816/image.gif)
+![로그인](https://github.com/hyeonbinnn/make-blog/assets/117449788/d4ae99b6-1d59-4124-98c4-0a144943dd6f)
 
 <br>
 
 ### 비로그인
-![](https://velog.velcdn.com/images/hyeonbinnn/post/8617de7e-93aa-405b-a6a3-297c95b26a35/image.gif)
+![비로그인](https://github.com/hyeonbinnn/make-blog/assets/117449788/47149f72-155f-45c8-b271-e54f5b2ba6a6)
 
