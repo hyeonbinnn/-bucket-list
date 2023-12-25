@@ -234,12 +234,4 @@
 <br>
 <br>
 
-## 🖱️ 결과
-### 로그인
-![로그인](https://github.com/hyeonbinnn/make-blog/assets/117449788/d4ae99b6-1d59-4124-98c4-0a144943dd6f)
-
-<br>
-
-### 비로그인
-![비로그인](https://github.com/hyeonbinnn/make-blog/assets/117449788/47149f72-155f-45c8-b271-e54f5b2ba6a6)
 
